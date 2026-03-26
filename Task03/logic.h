@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-
 using namespace std;
 
-string draw_rectangle(int n, int m);
+string find_smaller_squares(int number);

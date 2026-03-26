@@ -1,26 +1,29 @@
 #include "logic.h"
 
-void draw_rectangle(int n, int m) {
+string draw_rectangle(int n, int m) {
+	string result = "";
 	if (n == 1 && m == 1) {
-		cout << '*';
+		result += '*';
 		return;
 	}
 
 	for (int i = 0; i < n; i++) {
-		cout << '*';
+		result += '*';
 	}
-	cout << endl;
+	result += '\n';
 
 	for (int i = 0; i < m - 2; i++)
 	{
-		cout << '*';
+		result += '*';
 		for (int i = 0; i < n - 2; i++) {
-			cout << " ";
+			result += " ";
 		}
-		cout << '*' << endl;
+		result += '*' + '\n';
 	}
 
 	for (int i = 0; i < n; i++) {
-		cout << '*';
+		result += '*';
 	}
+
+	return result;
 }

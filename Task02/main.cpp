@@ -10,7 +10,7 @@ int main() {
 	cout << "Enter m: ";
 	cin >> m;
 
-	draw_rectangle(n, m);
+	cout << draw_rectangle(n, m);
 
 	return 0;
 }
